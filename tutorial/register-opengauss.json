@@ -1,0 +1,16 @@
+{
+    "name": "inventory-connector1",
+    "config": {
+        "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+        "tasks.max": "1",
+        "database.hostname": "opengauss",
+        "database.port": "5432",
+        "database.user": "gaussdb",
+        "database.password": "Enmo@123",
+        "database.dbname" : "postgres",
+        "database.server.name": "dbserver1_opengauss",
+        "schema.include.list": "gaussdb",
+        "plugin.name": "wal2json",
+        "slot.name": "wal2json2"
+    }
+}
